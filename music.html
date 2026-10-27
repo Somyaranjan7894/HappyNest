@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8f5">
+    <meta name="description" content="A little Bekhudi music moment for Rutuprajna.">
+    <title>Bekhudi — A Little World for Rutuprajna</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="music-page">
+    <a class="skip-link" href="#main">Skip to the music</a>
+    <header class="site-header"><div class="site-header__inner">
+      <a class="site-brand" href="index.html"><span class="site-brand__mark" aria-hidden="true">♡</span><span>A Little World<small>for Rutuprajna</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="music.html" aria-current="page">Music</a><a href="surprises.html">Surprises</a><a href="letter.html">Letter</a><a href="jagannath.html">Jai Jagannath</a></nav>
+    </div></header>
+    <main id="main" class="page-wrap page-main">
+      <header class="page-heading">
+        <p class="eyebrow eyebrow--center">A song to sit with you</p>
+        <h1>A little music, just for you</h1>
+        <p>Take a breath, get comfortable, and let the music keep you company.</p>
+      </header>
+      <section class="music-feature" aria-label="Bekhudi music player">
+        <div class="music-feature__image"><img src="assets/images/Good Music, Better Days at Sunset.png" width="1536" height="1024" alt="Headphones and music notes beside a peaceful sunset over the water."></div>
+        <div class="player-card">
+          <div class="player-art" aria-hidden="true">
+            <div class="record"><span class="record__groove record__groove--one"></span><span class="record__groove record__groove--two"></span><span class="record__label"><span class="record__heart">&#9825;</span></span></div>
+            <div class="music-bars"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="music-particles" aria-hidden="true"></div>
+          </div>
+          <div class="player-content">
+            <p class="player-kicker">A favorite for a softer moment</p>
+            <h2 class="player-title">Bekhudi</h2>
+            <p class="player-details">Teraa Surroor <span aria-hidden="true">&middot;</span> 2016</p>
+            <audio id="bekhudi-audio" preload="metadata" src="assets/audio/Bekhudi Teraa Surroor 320 Kbps.mp3"></audio>
+            <div class="player-controls">
+              <button class="button button--primary play-button" id="play-toggle" type="button" aria-label="Play Bekhudi" aria-pressed="false">
+                <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.8v12.4c0 .7.8 1.1 1.4.7l9-6.2a.9.9 0 0 0 0-1.4l-9-6.2c-.6-.4-1.4 0-1.4.7Z" fill="currentColor"/></svg>
+                <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5.5h3.4v13H7zm6.6 0H17v13h-3.4z" fill="currentColor"/></svg>
+              </button>
+              <div class="track-progress">
+                <label class="visually-hidden" for="seek-control">Seek through Bekhudi</label>
+                <input id="seek-control" class="seek-control" type="range" min="0" max="1000" value="0" step="1" disabled aria-valuetext="0:00 of 0:00">
+                <div class="time-row" aria-hidden="true"><span id="elapsed-time">0:00</span><span id="total-time">--:--</span></div>
+              </div>
+            </div>
+            <p class="player-status" id="player-status" role="status" aria-live="polite" aria-atomic="true">The song is ready when you are.</p>
+            <p class="player-note">Press play only when you feel like listening. No lyrics, just a little space for the music.</p>
+          </div>
+        </div>
+      </section>
+      <img class="floral-divider floral-divider--music" src="assets/images/Romantic Watercolour Floral Heart Divider.png" width="1983" height="793" alt="" aria-hidden="true" loading="lazy">
+    </main>
+    <footer class="site-footer site-footer--music"><span>Made with friendship and care <span aria-hidden="true">♡</span></span><a class="button button--primary site-footer__cta" href="surprises.html">Discover Your Little Gifts <span aria-hidden="true">&rarr;</span></a></footer>
+  </body>
+</html>
